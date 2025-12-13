@@ -41,6 +41,7 @@ The notebooks are numbered to guide you through the pipeline.
 
 ### Phase 4: Class Imbalance Handling
 *   **`4_imbal_all_t_1_2.ipynb`**: Reproduces **Table 9**. Compares resampling techniques (SMOTE, ADASYN, ENN, Tomek-links) combined with threshold optimization.
+*   **`4_imbal_stack_t_1_2.ipynb`**: Reproduces Stacking results in Table 9, applying both data balancing techniques and threshold optimization for $t=2$.
     *   *Files ending in `_no_opt` show performance without threshold tuning for comparison.*
 
 ### Phase 5: Calibration & Explanation
