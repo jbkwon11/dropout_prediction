@@ -45,7 +45,6 @@ The notebooks are numbered to guide you through the pipeline.
 *   **`4_imbal_base_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Optimized Threshold)**.
 *   **`4_imbal_stack_no_opt_t_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Default Threshold)**.
 *   **`4_imbal_stack_opt_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Optimized Threshold)**.
-    *   *Files ending in `_no_opt` show performance without threshold tuning for comparison.*
 
 ### Phase 5: Calibration & Explanation
 *   **`5_calibrate_t_1_2.ipynb`**: Reproduces **Figure 2**. Applies Platt Scaling and visualizes reliability diagrams.
