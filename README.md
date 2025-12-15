@@ -41,8 +41,8 @@ The notebooks are numbered to guide you through the pipeline.
 
 ### Phase 4: Class Imbalance Handling
 *   Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN) for $t=2$.
-*   **`4_imbal_all_no_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Default Threshold)**.
-*   **`4_imbal_all_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Optimized Threshold)**.
+*   **`4_imbal_base_no_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Default Threshold)**.
+*   **`4_imbal_base_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Optimized Threshold)**.
 *   **`4_imbal_stack_no_opt_t_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Default Threshold)**.
 *   **`4_imbal_stack_opt_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Optimized Threshold)**.
     *   *Files ending in `_no_opt` show performance without threshold tuning for comparison.*
