@@ -60,4 +60,4 @@ If you use this code or framework, please cite our paper:
 > J. B. Kwon, "A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction," *IEEE Access*, under review, 2025.
 
 ---
-For any questions regarding the code or data, please contact the corresponding author at [Your Email Address].
+For any questions regarding the code or data, please contact the corresponding author at jbkwon@sunmoon.ac.kr.
