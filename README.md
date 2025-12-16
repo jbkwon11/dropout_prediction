@@ -1,7 +1,7 @@
 # dropout_prediction
 This repository provides the reproducible implementation for the study:
 
-**“A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction”**  
+**“A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction”**
 (IEEE Access, 2025 — second-round revision)
 
 ## Data Availability & Privacy
@@ -38,16 +38,19 @@ The notebooks are numbered to guide you through the pipeline.
 *   **`3_hp_tune_cat_t_1_2.ipynb`**: Demonstrates hyperparameter tuning (Grid Search) for CatBoost.
 *   **`3_test_base_t_1_{n}.ipynb`**: Reproduces **Table 6** for SVM, MLP, LightGBM, XGBoost, and CatBoost.
 *   **`3_test_stack_t_1_{n}.ipynb`**: Reproduces Stacking results in **Table 6**.
-*   **`3_robust__tempo_datasets.ipynb`**: Build temporal splits of dataset for the robustness test.
+*   **`3_robust_tempo_datasets.ipynb`**: Builds temporal splits of the dataset for the robustness test.
 *   **`3_robust_base_t_1_2.ipynb`**: Reproduces **Table 7** for SVM, MLP, LightGBM, XGBoost, and CatBoost.
 *   **`3_robust_stacking_t_1_2.ipynb`**: Reproduces Stacking results in **Table 7**.
 
 ### Phase 4: Class Imbalance Handling
-*   Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN) for $t=2$.
-*   **`4_imbal_base_no_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Default Threshold)**.
-*   **`4_imbal_base_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9 (Optimized Threshold)**.
-*   **`4_imbal_stack_no_opt_t_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Default Threshold)**.
-*   **`4_imbal_stack_opt_1_2.ipynb`**: Reproduces Stacking results in **Table 9 (Optimized Threshold)**.
+Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN) for $t=2$.
+
+*   **`4_imbal_base_no_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9** (Default Threshold).
+*   **`4_imbal_base_opt_t_1_2.ipynb`**: Reproduces the results of SVM, MLP, LightGBM, XGBoost, and CatBoost in **Table 9** (Optimized Threshold).
+*   **`4_imbal_stack_no_opt_t_1_2.ipynb`**: Reproduces Stacking results in **Table 9** (Default Threshold).
+*   **`4_imbal_stack_opt_t_1_2.ipynb`**: Reproduces Stacking results in **Table 9** (Optimized Threshold).
+
+> *Files ending in `_no_opt` show performance without threshold tuning for comparison.*
 
 ### Phase 5: Calibration & Explanation
 *   **`5_calibrate_t_1_2.ipynb`**: Reproduces **Figure 2**. Applies Platt Scaling and visualizes reliability diagrams.
@@ -60,4 +63,4 @@ If you use this code or framework, please cite our paper:
 > J. B. Kwon, "A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction," *IEEE Access*, under review, 2025.
 
 ---
-For any questions regarding the code or data, please contact the corresponding author at jbkwon@sunmoon.ac.kr.
+For any questions regarding the code or data, please contact the corresponding author at [jbkwon@sunmoon.ac.kr](mailto:jbkwon@sunmoon.ac.kr).
