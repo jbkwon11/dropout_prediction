@@ -36,8 +36,10 @@ The notebooks are numbered to guide you through the pipeline.
 
 ### Phase 3: Base Modeling & Tuning
 *   **`3_hp_tune_cat_t_1_2.ipynb`**: Demonstrates hyperparameter tuning (Grid Search) for CatBoost.
-*   **`3_test_base_t_1_{n}.ipynb`**: Reproduces **Table 6** (Baseline performance). Evaluates SVM, MLP, LightGBM, XGBoost, and CatBoost.
+*   **`3_test_base_t_1_{n}.ipynb`**: Reproduces **Table 6** for SVM, MLP, LightGBM, XGBoost, and CatBoost.
 *   **`3_test_stack_t_1_{n}.ipynb`**: Reproduces Stacking results in **Table 6**.
+*   **`3_robust_base_t_1_2.ipynb`**: Reproduces **Table 7** for SVM, MLP, LightGBM, XGBoost, and CatBoost.
+*   **`3_robust_stacking_t_1_2.ipynb`**: Reproduces Stacking results in **Table 7**.
 
 ### Phase 4: Class Imbalance Handling
 *   Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN) for $t=2$.
