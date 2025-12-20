@@ -16,12 +16,19 @@ To ensure the reproducibility of our code and pipeline, we provide a **synthetic
 
 ### Data Dictionary (Registry Features)
 The framework uses standard registry variables:
-*   `sex`, `nation`, `admtype`, `inquota`: Demographic and admission details.
-*   `college`: Affiliated college.
-*   `year`, `years_since`: Academic timeline information.
-*   `gpa_last`, `credits_last`, `credits_tot`: Academic performance metrics.
+*   `semester`(snapshot): Spring (0) or Fall (1).
+*   `sex`: Male or Female.
+*   `nation`: Nationality (6 groups: Korea, Japan, Vietnam, . . . ).
+*   `adm_unit` (adm_type): Type of admission (5 types).
+*   `inquota`: In-quota or out-of-quota admission.
+*   `college`: Affiliated college (6 colleges).
+*   `grade`(year): Academic year (1–5).
+*   `years_since`: Calendar years since initial admission (including leave periods).
+*   `gpa_last`: GPA in the last semester (0–4.5).
+*   `credits_last`: Credits earned in the last semester.
+*   `credits_tot`: Cumulative credits earned.
 *   `n_semesters`: Total semesters enrolled.
-*   `status`: Current enrollment status (Enrolled, On-leave, etc.).
+*   `status`: Academic status in the snapshot (enrolled (0) / graduated (1) / dropped out (2) / on leave (3)).
 
 ## Usage Pipeline
 
