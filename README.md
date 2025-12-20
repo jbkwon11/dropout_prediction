@@ -19,7 +19,7 @@ The framework uses standard registry variables:
 *   `semester`(snapshot): Spring (0) or Fall (1).
 *   `sex`: Male or Female.
 *   `nation`: Nationality (6 groups: Korea, Japan, Vietnam, . . . ).
-*   `adm_unit` (adm_type): Type of admission (5 types).
+*   `adm_unit`(adm_type): Type of admission (5 types).
 *   `inquota`: In-quota or out-of-quota admission.
 *   `college`: Affiliated college (6 colleges).
 *   `grade`(year): Academic year (1–5).
@@ -28,7 +28,7 @@ The framework uses standard registry variables:
 *   `credits_last`: Credits earned in the last semester.
 *   `credits_tot`: Cumulative credits earned.
 *   `n_semesters`: Total semesters enrolled.
-*   `status`: Academic status in the snapshot (enrolled (0) / graduated (1) / dropped out (2) / on leave (3)).
+*   `state` (status): Academic status in the snapshot (enrolled (0) / graduated (1) / dropped out (2) / on leave (3)).
 
 ## Usage Pipeline
 
