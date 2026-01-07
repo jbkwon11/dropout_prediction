@@ -20,7 +20,10 @@ This codebase is designed as a **methodological skeleton**. While it includes sp
 
 To adapt this framework to your institution, please locate and update the **institution-specific variables** defined in the preprocessing notebooks:
 
-**1. Data Schema & Mappings (`1_data_preparation.ipynb`):**
+**1. Input Data Loading (`1_data_preparation.ipynb`):**
+*   **File Paths & Loading Logic:** The current code loads six semester-level snapshots from an Excel file (`datasets/academic_data_21-23.xlsx`). You must update these lines to load your institution's raw data files (e.g., CSVs or SQL query results) and concatenate them into a single DataFrame `df`.
+
+**2. Data Schema & Mappings (`1_data_preparation.ipynb`):**
 *   **Column Names:** Update the `col_names` list (Cell 2) to match your raw data schema.
 *   **Status Codes:** Update the `state_code` dictionary to map your institution's status labels (e.g., 'Enrolled', 'Graduated') to the framework's standard integers (0, 1, etc.).
 *   **Demographics & Admission:** Update `nation_code` (nationality groups) and `in_capa` (in-quota/out-of-quota) mappings to reflect your student body composition and admission policies.
