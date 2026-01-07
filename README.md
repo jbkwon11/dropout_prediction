@@ -40,7 +40,7 @@ The framework uses standard registry variables:
 *   `sex`: Male or Female.
 *   `nation`: Nationality (6 groups: Korea, Japan, Vietnam, . . . ).
 *   `adm_unit`(adm_type): Type of admission (5 types).
-*   `inquota`: In-quota or out-of-quota admission.
+*   `in_capa` (inquota): In-quota or out-of-quota admission.
 *   `college`: Affiliated college (6 colleges).
 *   `grade`(year): Academic year (1–5).
 *   `years_since`: Calendar years since initial admission (including leave periods).
