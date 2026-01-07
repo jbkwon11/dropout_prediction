@@ -2,7 +2,7 @@
 This repository provides the reproducible implementation for the study:
 
 **“A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction”**
-(IEEE Access, 2025 — second-round revision)
+(IEEE Access, 2026 — third-round revision)
 
 ## Data Availability & Privacy
 
@@ -13,6 +13,23 @@ The original student-level administrative records used in the study are owned by
 To ensure the reproducibility of our code and pipeline, we provide a **synthetic dataset** (`datasets/synthetic_aca_21-23.csv`) that mimics the structure and feature distribution of the original data.
 *   This file allows reviewers and researchers to run the full pipeline (from Phase 2 onwards).
 *   **Usage:** You can load this dataset directly in `2_sample_construction.ipynb` to test the sample generation logic.
+
+## Note on Reusability & Configuration
+
+This codebase is designed as a **methodological skeleton**. While it includes specific configurations used for the case study, the core logic is portable.
+
+To adapt this framework to your institution, please locate and update the **institution-specific variables** defined in the preprocessing notebooks:
+
+**1. Data Schema & Mappings (`1_data_preparation.ipynb`):**
+*   **Column Names:** Update the `col_names` list (Cell 2) to match your raw data schema.
+*   **Status Codes:** Update the `state_code` dictionary to map your institution's status labels (e.g., 'Enrolled', 'Graduated') to the framework's standard integers (0, 1, etc.).
+*   **Demographics & Admission:** Update `nation_code` (nationality groups) and `in_capa` (in-quota/out-of-quota) mappings to reflect your student body composition and admission policies.
+*   **Organizational Codes:** Update `college_code` and `adm_unit_code` dictionaries to reflect your institution's college/department structure and admission types.
+
+**2. Horizon Parameters (`2_sample_construction.ipynb`):**
+*   **Target Definitions:** In the `prepare_dataset` function, the logic defining the prediction horizon (e.g., variables like `no_next` checking `df['year'] == 2023`) is hardcoded to the study's timeframe (2021-2023). You must update these year/semester conditions to match the final snapshot of your own dataset.
+
+*These sections are conceptually marked as configuration points requiring local adaptation.*
 
 ### Data Dictionary (Registry Features)
 The framework uses standard registry variables:
