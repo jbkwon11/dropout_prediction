@@ -2,7 +2,7 @@
 This repository provides the reproducible implementation for the study:
 
 **“A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction”**
-(IEEE Access, 2026 — third-round revision)
+(IEEE Access, 2026, DOI: 10.1109/ACCESS.2026.3666870)
 
 ## Data Availability & Privacy
 
