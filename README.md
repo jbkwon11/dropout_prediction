@@ -87,7 +87,7 @@ Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN
 
 If you use this code or framework, please cite our paper:
 
-> J. B. Kwon, "A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction," *IEEE Access*, under review, 2025.
+> Kwon, J. B. (2026), "A Portable, Generalizable Machine Learning Framework for Long-Term Student Dropout Prediction," *IEEE Access*, 14, 30830–30843.
 
 ---
 For any questions regarding the code or data, please contact the corresponding author at [jbkwon@sunmoon.ac.kr](mailto:jbkwon@sunmoon.ac.kr).
