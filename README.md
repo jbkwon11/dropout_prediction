@@ -6,6 +6,31 @@ This repository provides the reproducible implementation for the study:
 
 DOI: 10.1109/ACCESS.2026.3666870
 
+---
+
+## 📄 Patent Notice
+
+The core methodologies, pipeline algorithms, optimization methods, and explainable decision-support systems implemented in this repository are protected under patent applications in the Republic of Korea (Patent Pending).
+
+* **Applicant / Assignee:** Industry-Academic Cooperation Foundation, Sun Moon University
+* **Patent Status:** Patent Pending
+* **Associated Patent Applications:**
+  1. **METHOD FOR AUTOMATIC GENERATION OF MULTI-SEMESTER TIME SERIES LEARNING DATA, RECORDING MEDIUM AND DEVICE PERFORMING THE SAME**
+  2. **AUTOMATIC THRESHOLD OPTIMIZATION METHOD FOR REAL-WORLD DEPLOYMENT OF BACHELOR PREDICTION MODEL, RECORDING MEDIUM AND DEVICE FOR PERFORMING THE SAME**
+  3. **EXPLAINABLE AI-BASED DEVICE, METHOD, AND RECORDING MEDIUM FOR INDIVIDUAL ACADEMIC RISK DIAGNOSIS AND AUTOMATIC GENERATION OF CUSTOMIZED COUNSELING SCRIPTS**
+  4. **EXPLAINABLE AI AGGREGATE ANALYSIS-BASED ORGANIZATION-LEVEL RISK DIAGNOSIS AND RESOURCE REALLOCATION DECISION SUPPORT DEVICE AND METHOD**
+
+---
+
+## 📜 License & Terms of Use
+
+This codebase is provided solely for **academic, research, and non-commercial evaluation purposes**. 
+
+* **Permitted Use:** Academic citation, peer review, and non-commercial research reproducibility.
+* **Prohibited Use:** Any commercial deployment, inclusion in proprietary enterprise solutions, or unauthorized commercial redistribution is strictly prohibited without an explicit technology transfer and licensing agreement with the **Industry-Academic Cooperation Foundation, Sun Moon University**.
+
+---
+
 ## Data Availability & Privacy
 
 **Note on Real Data:**
@@ -15,6 +40,8 @@ The original student-level administrative records used in the study are owned by
 To ensure the reproducibility of our code and pipeline, we provide a **synthetic dataset** (`datasets/synthetic_aca_21-23.csv`) that mimics the structure and feature distribution of the original data.
 *   This file allows reviewers and researchers to run the full pipeline (from Phase 2 onwards).
 *   **Usage:** You can load this dataset directly in `2_sample_construction.ipynb` to test the sample generation logic.
+
+---
 
 ## Note on Reusability & Configuration
 
@@ -36,6 +63,8 @@ To adapt this framework to your institution, please locate and update the **inst
 
 *These sections are conceptually marked as configuration points requiring local adaptation.*
 
+---
+
 ### Data Dictionary (Registry Features)
 The framework uses standard registry variables:
 *   `semester`(snapshot): Spring (0) or Fall (1).
@@ -51,6 +80,8 @@ The framework uses standard registry variables:
 *   `credits_tot`: Cumulative credits earned.
 *   `n_semesters`: Total semesters enrolled.
 *   `state` (status): Academic status in the snapshot (enrolled (0) / graduated (1) / dropped out (2) / on leave (3)).
+
+---
 
 ## Usage Pipeline
 
@@ -84,6 +115,8 @@ Evaluates resampling techniques (SMOTE, ADASYN, CNN, ENN, Tomek-links, SMOTE-ENN
 ### Phase 5: Calibration & Explanation
 *   **`5_calibrate_t_1_2.ipynb`**: Reproduces **Figure 2**. Applies Platt Scaling and visualizes reliability diagrams.
 *   **`5_shap_t_1_2.ipynb`**: Reproduces **Figure 3**. Generates SHAP summary plots to explain model decisions.
+
+---
 
 ## 📝 Citation
 
